@@ -1,0 +1,58 @@
+{
+	"name": "directus-extension-jira-panels",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "JIRA for your Directus Insights Dashboard",
+	"icon": "extension",
+	"license": "MIT",
+	"directus:extension": {
+		"host": "^10.1.14",
+		"type": "bundle",
+		"path": {
+			"app": "dist/app.js",
+			"api": "dist/api.js"
+		},
+		"entries": [
+			{
+				"type": "panel",
+				"name": "jira-form",
+				"source": "src/jira-form/index.ts"
+			},
+			{
+				"type": "panel",
+				"name": "jira-list",
+				"source": "src/jira-list/index.ts"
+			},
+			{
+				"type": "endpoint",
+				"name": "jira-api",
+				"source": "src/jira-api/index.ts"
+			}
+		]
+	},
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-custom-bundle"
+	],
+	"scripts": {
+		"build": "directus-extension build",
+		"dev": "directus-extension build -w --no-minify",
+		"link": "directus-extension link",
+		"add": "directus-extension add",
+		"prepublishOnly": "directus-extension build"
+	},
+	"files": [
+    "dist"
+  ],
+	"devDependencies": {
+		"@directus/extensions-sdk": "10.1.14",
+		"@types/node": "^20.8.9",
+		"typescript": "^5.2.2",
+		"vue": "^3.3.7"
+	},
+	"dependencies": {
+		"@directus/errors": "^0.0.1",
+		"jira.js": "^3.0.0"
+	}
+}
