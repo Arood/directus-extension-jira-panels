@@ -14,6 +14,8 @@ This extension contains panels for your Directus Insights dashboards that allow 
 
 ## Set Up Instructions
 
+Easiest way to install is by using the NPM-package: `npm i directus-extension-jira-panels`. Alternatively download this repo, put it in your extensions-folder and run the build scripts.
+
 This extension requires an Atlassian account with an API token. You can create [a token on this page](https://id.atlassian.com/manage-profile/security/api-tokens).
 
 When you have your token, you can simply add the panels you want and make sure to fill out host, e-mail and API token in the panel options. Hint: If you're planning on having several lists, you can use the new duplicate panel function in Directus 10.7!
