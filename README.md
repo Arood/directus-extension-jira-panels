@@ -2,7 +2,7 @@
 
 This extension contains panels for your Directus Insights dashboards that allow your users to see tasks in JIRA or even submit their own feedback.
 
-![Screenshot](https://github.com/Arood/directus-extension-jira-panels/blob/v1.0.0/preview.png?raw=true)
+![Screenshot](https://github.com/Arood/directus-extension-jira-panels/blob/main/preview.png?raw=true)
 
 ## Details
 
